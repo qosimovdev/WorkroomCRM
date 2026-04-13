@@ -14,7 +14,7 @@ function Login({ onLogin }) {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    if (email === "admin@gmail.com" && password === "admin ") {
+    if (email === "admin@gmail.com" && password === "admin") {
       localStorage.setItem("isLoggedIn", "true");
       if (onLogin) onLogin();
       navigate("/dashboard");
@@ -89,7 +89,7 @@ function Login({ onLogin }) {
           </form>
 
           <p onClick={Move} className="forget_password">
-            Don’t have an account?
+            Don't have an account?
           </p>
         </div>
       </div>
