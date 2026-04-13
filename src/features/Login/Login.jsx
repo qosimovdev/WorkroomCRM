@@ -14,7 +14,7 @@ function Login({ onLogin }) {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    if (email === "admin@gmail.com" && password === "1234 ") {
+    if (email === "admin@gmail.com" && password === "admin ") {
       localStorage.setItem("isLoggedIn", "true");
       if (onLogin) onLogin();
       navigate("/dashboard");
